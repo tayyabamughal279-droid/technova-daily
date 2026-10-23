@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   },
   description:
     "Practical guides to AI tools, software, and everyday technology, explained clearly.",
+  verification: {
+    google: "gMjE9StS3nfLEVgLlOovL5j6fLGnGdwiQCRbNRWqQw8",
+  },
 };
 
 export default function RootLayout({
