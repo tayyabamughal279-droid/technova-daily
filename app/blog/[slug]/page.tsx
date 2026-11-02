@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import { posts } from "@/lib/posts";
 import { articleEnhancements } from "@/lib/article-enhancements";
 
+export const instant = false;
+
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
