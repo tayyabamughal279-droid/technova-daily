@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { posts } from "@/lib/posts";
 
+export const instant = false;
+
 export const metadata = {
   title: "All Articles",
   description: "Browse practical guides to AI, software, cybersecurity, and everyday technology.",
