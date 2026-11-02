@@ -317,3 +317,51 @@ a:hover { color: var(--blue); }
     font-size: 20px;
   }
 }
+
+/* Editorial upgrade: topic discovery, article navigation and practical blocks */
+.category-section { padding-top: 8px; padding-bottom: 35px; }
+.category-chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.category-chips a {
+  display: inline-flex; align-items: center; gap: 9px; padding: 10px 14px;
+  border: 1px solid var(--line); border-radius: 999px; background: #fff;
+  color: #43516a; font-size: 12px; font-weight: 700; transition: .2s ease;
+}
+.category-chips a:hover, .category-chips a.active {
+  border-color: #bfcaff; background: #eef1ff; color: var(--blue);
+}
+.category-chips a span { color: #8993a4; font-size: 10px; }
+.editorial-note { margin-top: 30px; padding: 62px 0; background: #f7f8fc; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.editorial-note-inner { max-width: 850px; }
+.editorial-note h2 { max-width: 650px; margin: 12px 0; font-size: clamp(27px, 4vw, 38px); letter-spacing: -1.2px; }
+.editorial-note p { max-width: 720px; color: var(--muted); font-size: 14px; line-height: 1.9; }
+.listing-filters { margin-top: 28px; }
+.results-count { margin-top: 28px; color: var(--muted); font-size: 12px; }
+.article-content { min-width: 0; }
+.article-focus { margin: 25px 0 30px; padding: 22px 24px; border-left: 3px solid var(--blue); background: #f6f8ff; }
+.article-focus h2 { margin: 0 0 8px !important; font-size: 19px !important; }
+.article-focus p { margin: 0 !important; }
+.article-toc { margin: 28px 0 38px; padding: 22px 25px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+.article-toc strong { color: var(--ink); font-size: 14px; }
+.article-toc ol { margin: 12px 0 0; padding-left: 20px; columns: 2; }
+.article-toc li { break-inside: avoid; padding: 4px 0; color: var(--muted); font-size: 12px; }
+.article-toc a, .sources-panel a { color: var(--blue); text-decoration: underline; text-underline-offset: 3px; }
+.article-section { scroll-margin-top: 25px; }
+.article-section h2 { scroll-margin-top: 25px; }
+.workflow-list, .checklist-list { padding-left: 23px; }
+.workflow-list li, .checklist-list li { margin: 0 0 12px; padding-left: 4px; }
+.example-panel { margin-top: 35px; padding: 24px; border-radius: 12px; background: #f7f8fc; }
+.example-panel h2 { margin-top: 0 !important; }
+.example-note { margin-top: 14px !important; color: #7b8799; font-size: 12px; }
+.sources-panel { margin-top: 35px; padding-top: 10px; border-top: 1px solid var(--line); }
+.sources-panel ul { padding-left: 20px; }
+.sources-panel li { margin-bottom: 9px; font-size: 14px; }
+.article-sidebar a { display: flex; }
+.article-sidebar a:hover { color: var(--blue); }
+.article-back { margin-top: 28px; font-size: 13px; }
+.article-back a { color: var(--blue); }
+@media (max-width: 650px) {
+  .article-toc ol { columns: 1; }
+  .article-focus, .example-panel, .article-toc { padding: 18px; }
+  .category-chips { gap: 8px; }
+  .category-chips a { font-size: 11px; padding: 9px 11px; }
+}
